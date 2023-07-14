@@ -28,4 +28,4 @@ nb2thumb('_test_nbs/geom_col.ipynb', label='two_variable_bar_plot')
 
 ## Usage
 
-See [this page](./00_thumb.ipynb).
+See [this page](https://fastai.github.io/nb-thumb/thumb.html).
