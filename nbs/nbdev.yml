@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "nb-thumb"
+  site-url: "https://fastai.github.io/nb-thumb"
+  description: "Extract thumbnails from Jupyter notebooks"
+  repo-branch: master
+  repo-url: "https://github.com/fastai/nb-thumb"
