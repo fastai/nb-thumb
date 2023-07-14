@@ -19,7 +19,7 @@ def _decode_img(base64_str):
     return img
 
 def get_img(nb_path, label='thumbnail'):
-    "Get image from notebook with a cell comment #|label: {label}"
+    "Get image from notebook with a quarto cell directive with `#|label: {label}`"
     out_plots = None
     lbl = re.compile(f'#\|(\s*)label:(\s*){label}')
     nb = nbformat.read(open(nb_path), as_version=4)
