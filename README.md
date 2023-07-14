@@ -21,7 +21,9 @@ from nb_thumb.thumb import nb2thumb
 ```
 
 ``` python
-nb2thumb('_test_nbs/geom_col.ipynb', label='two_variable_bar_plot')
+nb2thumb(nb_path='_test_nbs/geom_col.ipynb', 
+         label='two_variable_bar_plot',
+         size=(200,200))
 ```
 
 ![](index_files/figure-commonmark/cell-3-output-1.png)
