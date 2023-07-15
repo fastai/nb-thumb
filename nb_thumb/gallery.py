@@ -14,7 +14,7 @@ from fastcore.test import test_eq
 def emb_img(nb_path:str, # the path to the notebook
             label:str, # the label indicating the cell where the plot is
             caption:str='', # the caption, will be inferred from label if not specified.
-            anchor='#example', # anchor tag in source page
+            anchor='#example', # anchor tag in source page, this defaults to `#example` for plotnine: https://plotnine.readthedocs.io
            size=(150,150) # size of the thumbnail
            ) -> str:
     "Embed a thumbnail image as a markdown cell."
