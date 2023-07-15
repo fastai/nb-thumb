@@ -5,12 +5,10 @@ __all__ = ['emb_img', 'gallery']
 
 # %% ../nbs/01_gallery.ipynb 2
 from .thumb import nb2thumb
-from PIL import Image
 from pathlib import Path
 from fastcore.foundation import L
 from fastcore.utils import mkdir
 from fastcore.test import test_eq
-from typing import List, Dict
 
 # %% ../nbs/01_gallery.ipynb 3
 def emb_img(nb_path:str, # the path to the notebook
@@ -37,8 +35,9 @@ def emb_img(nb_path:str, # the path to the notebook
 """ 
 
 # %% ../nbs/01_gallery.ipynb 8
-def gallery(plots:List[Dict]):
-    "arrange plots into a gallery."
+def gallery(plots:list[dict] # a list of dictionaries which contain arguments for `emb_img`.
+           ) -> str:
+    "Arrange plots into a gallery."
     md = L(plots).map(lambda x: emb_img(**x))
     return '\n::: {.content-block .grid .gap-4}\n' + '\n'.join(md) + '\n:::'
         
