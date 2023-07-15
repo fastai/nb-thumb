@@ -35,3 +35,9 @@ div.description {
   font-size: 135%;
   opacity: 70%;
 }
+
+/* css styles */
+.plot-gallery {
+  height: 175px;
+  object-fit: contain;
+}

@@ -3,3 +3,11 @@ website:
     contents:
       - index.ipynb
       - 00_thumb.ipynb
+      - 01_gallery.ipynb
+      - section: test_nbs
+        contents:
+          - test_nbs/PlotnineAnimation.ipynb
+          - test_nbs/geom_col.ipynb
+          - test_nbs/geom_density.ipynb
+          - test_nbs/geom_map.ipynb
+          - test_nbs/geom_segment.ipynb
