@@ -72,4 +72,4 @@ print(gallery(plots))
 ## Usage
 
 For more information and examples, see [the
-docs](https://fastai.github.io/).
+docs](https://fastai.github.io/nb-thumb/).
