@@ -12,7 +12,7 @@ from fastcore.test import test_eq
 
 # %% ../nbs/01_gallery.ipynb 3
 def emb_img(nb_path:str, # the path to the notebook
-            label:str, # the label indicating the cell where the plot is
+            label:str, # the label indicating the cell where the plot is, see https://quarto.org/docs/authoring/notebook-embed.html#code-cell-options for an example.
             caption:str='', # the caption, will be inferred from label if not specified.
             anchor='#example', # anchor tag in source page, this defaults to `#example` for plotnine: https://plotnine.readthedocs.io
            size=(150,150) # size of the thumbnail
