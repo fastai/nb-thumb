@@ -1,0 +1,1 @@
+Sitemap: https://fastai.github.io/nb-thumb/sitemap.xml
