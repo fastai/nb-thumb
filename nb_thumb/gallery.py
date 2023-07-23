@@ -19,7 +19,7 @@ def emb_img(nb_path:str, # the path to the notebook
            ) -> str:
     "Embed a thumbnail image as a markdown cell."
     if not caption: caption = label.replace('_', ' ').title()
-    d = mkdir(f'{Path(nb_path).stem}_data', exist_ok=True)
+    d = mkdir(f'gallery_plot_data/{Path(nb_path).stem}', exist_ok=True, parents=True)
     img = nb2thumb(nb_path, label=label, size=size)
     outfile = d/f'{label}.png'
     img.save(outfile)
